@@ -1,0 +1,19 @@
+
+ 
+cmake_minimum_required(VERSION 3.0.0)
+
+# List internal includes needed.
+
+#include_directories(${CMAKE_SOURCE_DIR})
+
+#
+# Define the Module-MAC
+#
+
+project(manager)
+
+include_directories(include)
+set(SOURCE_LIB include/manager.h
+               src/manager.cpp)
+add_library(manager  STATIC ${SOURCE_LIB})
+
